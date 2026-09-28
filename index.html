@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoolMaster — Установка и обслуживание кондиционеров в Алматы</title>
+  <meta name="description" content="Профессиональная установка, обслуживание и ремонт кондиционеров в Алматы и Алматинской области. Быстро, качественно, с гарантией.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__icon">❄️</span>
+        <span class="logo__text">Cool<strong>Master</strong></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#services" class="nav__link" onclick="closeMenu()">Услуги</a>
+        <a href="#advantages" class="nav__link" onclick="closeMenu()">Преимущества</a>
+        <a href="#pricing" class="nav__link" onclick="closeMenu()">Цены</a>
+        <a href="#contacts" class="nav__link" onclick="closeMenu()">Контакты</a>
+      </nav>
+      <button class="burger" id="burger" onclick="toggleMenu()" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Главный экран -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__title">Кондиционеры для&nbsp;вашего дома</h1>
+        <p class="hero__subtitle">Установка, обслуживание и ремонт кондиционеров в&nbsp;Алматы и&nbsp;Алматинской области. <strong>Быстро, качественно, с&nbsp;гарантией.</strong></p>
+        <div class="hero__buttons">
+          <a href="#services" class="btn btn--primary">Наши услуги</a>
+          <a href="https://wa.me/77476961287?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5" class="btn btn--whatsapp" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Написать в WhatsApp
+          </a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__number">500+</span>
+            <span class="stat__label">Установок</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">7 лет</span>
+            <span class="stat__label">На рынке</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">3 года</span>
+            <span class="stat__label">Гарантия</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__image">
+        <div class="hero__image-placeholder">
+          <span>❄️</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Наши услуги</h2>
+      <p class="section-subtitle">Полный спектр услуг по кондиционированию для вашего комфорта</p>
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__icon">🔧</div>
+          <h3 class="service-card__title">Установка кондиционеров</h3>
+          <p class="service-card__text">Профессиональный монтаж сплит-систем любых брендов. Аккуратно, быстро, без пыли и грязи.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">🛠️</div>
+          <h3 class="service-card__title">Обслуживание</h3>
+          <p class="service-card__text">Чистка фильтров, дозаправка фреоном, диагностика. Продлеваем жизнь вашего кондиционера.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">⚡</div>
+          <h3 class="service-card__title">Ремонт</h3>
+          <p class="service-card__text">Быстрая диагностика и ремонт любых неисправностей. Выезд мастера в день обращения.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">🏠</div>
+          <h3 class="service-card__title">Демонтаж и перенос</h3>
+          <p class="service-card__text">Аккуратный демонтаж и перенос кондиционера при переезде или ремонте квартиры.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">📋</div>
+          <h3 class="service-card__title">Подбор оборудования</h3>
+          <p class="service-card__text">Поможем выбрать кондиционер под ваше помещение. Учтём площадь, этаж и бюджет.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">🏢</div>
+          <h3 class="service-card__title">Для бизнеса</h3>
+          <p class="service-card__text">Кондиционирование офисов, магазинов и кафе. Мультисплит-системы и VRF/VRV.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Преимущества -->
+  <section class="advantages" id="advantages">
+    <div class="container">
+      <h2 class="section-title">Почему выбирают нас</h2>
+      <p class="section-subtitle">Мы ценим каждого клиента и гарантируем качество</p>
+      <div class="advantages__grid">
+        <div class="advantage">
+          <div class="advantage__number">01</div>
+          <h3 class="advantage__title">Опытные мастера</h3>
+          <p class="advantage__text">Наши специалисты имеют сертификаты и опыт работы от 5 лет. Регулярно проходят обучение.</p>
+        </div>
+        <div class="advantage">
+          <div class="advantage__number">02</div>
+          <h3 class="advantage__title">Гарантия 3 года</h3>
+          <p class="advantage__text">Даём расширенную гарантию на все виды работ. Если что-то пойдёт не так — исправим бесплатно.</p>
+        </div>
+        <div class="advantage">
+          <div class="advantage__number">03</div>
+          <h3 class="advantage__title">Выезд в день обращения</h3>
+          <p class="advantage__text">Не заставляем ждать — мастер приедет в удобное для вас время, даже в выходные.</p>
+        </div>
+        <div class="advantage">
+          <div class="advantage__number">04</div>
+          <h3 class="advantage__title">Честные цены</h3>
+          <p class="advantage__text">Называем точную стоимость до начала работ. Никаких скрытых доплат и сюрпризов.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Цены -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2 class="section-title">Цены на услуги</h2>
+      <p class="section-subtitle">Фиксированные цены без скрытых доплат</p>
+      <div class="pricing__grid">
+        <div class="price-card">
+          <div class="price-card__header">
+            <h3 class="price-card__title">Установка</h3>
+            <p class="price-card__desc">Стандартный монтаж сплит-системы</p>
+          </div>
+          <div class="price-card__price">от <strong>25 000</strong> ₸</div>
+          <ul class="price-card__list">
+            <li>Монтаж внутреннего блока</li>
+            <li>Монтаж наружного блока</li>
+            <li>Прокладка трассы до 3м</li>
+            <li>Вакуумирование системы</li>
+            <li>Пусконаладка</li>
+          </ul>
+          <a href="https://wa.me/77476961287?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BA%D0%BE%D0%BD%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D0%B0" class="btn btn--outline" target="_blank" rel="noopener">Заказать</a>
+        </div>
+        <div class="price-card price-card--popular">
+          <div class="price-card__badge">Популярное</div>
+          <div class="price-card__header">
+            <h3 class="price-card__title">Обслуживание</h3>
+            <p class="price-card__desc">Полная чистка и профилактика</p>
+          </div>
+          <div class="price-card__price">от <strong>8 000</strong> ₸</div>
+          <ul class="price-card__list">
+            <li>Чистка фильтров</li>
+            <li>Чистка внутреннего блока</li>
+            <li>Промывка дренажа</li>
+            <li>Проверка давления фреона</li>
+            <li>Диагностика системы</li>
+          </ul>
+          <a href="https://wa.me/77476961287?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%BE%D0%B1%D1%81%D0%BB%D1%83%D0%B6%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D0%B0" class="btn btn--primary" target="_blank" rel="noopener">Заказать</a>
+        </div>
+        <div class="price-card">
+          <div class="price-card__header">
+            <h3 class="price-card__title">Ремонт</h3>
+            <p class="price-card__desc">Диагностика + устранение неисправности</p>
+          </div>
+          <div class="price-card__price">от <strong>5 000</strong> ₸</div>
+          <ul class="price-card__list">
+            <li>Выезд мастера</li>
+            <li>Полная диагностика</li>
+            <li>Устранение неисправности</li>
+            <li>Замена комплектующих</li>
+            <li>Гарантия на работу</li>
+          </ul>
+          <a href="https://wa.me/77476961287?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BA%D0%BE%D0%BD%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D0%B0" class="btn btn--outline" target="_blank" rel="noopener">Заказать</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <h2 class="section-title">Контакты</h2>
+      <p class="section-subtitle">Свяжитесь с нами любым удобным способом</p>
+      <div class="contacts__grid">
+        <div class="contact-item">
+          <div class="contact-item__icon">📍</div>
+          <h3 class="contact-item__title">Адрес</h3>
+          <p class="contact-item__text">г. Алматы и Алматинская область</p>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon">📞</div>
+          <h3 class="contact-item__title">Телефон</h3>
+          <p class="contact-item__text"><a href="tel:+77476961287">+7 (747) 696-12-87</a></p>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon">🕐</div>
+          <h3 class="contact-item__title">Режим работы</h3>
+          <p class="contact-item__text">Пн-Вс: 09:00 — 20:00<br>Без выходных</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">
+        <span class="logo__icon">❄️</span>
+        <span class="logo__text">Cool<strong>Master</strong></span>
+      </div>
+      <p class="footer__text">Установка и обслуживание кондиционеров в Алматы © 2024</p>
+    </div>
+  </footer>
+
+  <!-- Плавающая кнопка WhatsApp -->
+  <a href="https://wa.me/77476961287?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav').classList.toggle('nav--open');
+      document.getElementById('burger').classList.toggle('burger--active');
+    }
+    function closeMenu() {
+      document.getElementById('nav').classList.remove('nav--open');
+      document.getElementById('burger').classList.remove('burger--active');
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('.header');
+      if (window.scrollY > 50) { header.classList.add('header--scrolled'); }
+      else { header.classList.remove('header--scrolled'); }
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('animate-in'); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.service-card, .advantage, .price-card, .contact-item').forEach(el => { observer.observe(el); });
+  </script>
+
+</body>
+</html>
